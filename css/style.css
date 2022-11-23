@@ -48,7 +48,7 @@
     justify-content: space-between;
 }
 .navbar .menu li a{
-    color: black;
+    color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -101,8 +101,13 @@
 }
 /* responsive  */
 @media (max-width:991px ){
+    
     .max-width{
         padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
     }
     .navbar .menu{
         position: fixed;
@@ -111,5 +116,16 @@
         left: 0;
         top: 0;
         background: #111;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .navbar .menu li{
+        display:block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+
     }
 }
